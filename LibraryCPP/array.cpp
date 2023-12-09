@@ -7,7 +7,7 @@ struct Array
 
     Array(size_t size) {
         this->size = size;
-        this->data = new Data[size];
+        this->data = new Data[size](); // Использование () для инициализации всех элементов нулями
     }
 
     ~Array() {
